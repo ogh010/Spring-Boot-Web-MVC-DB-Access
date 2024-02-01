@@ -27,7 +27,7 @@ public class helloController {
         return "hello"+name;
     }
 
-    /* 데이터를 내놓을 때 */
+    /* 데이터를 내놓을 때 객체 */
     @GetMapping("hello-api")
     @ResponseBody
     public Hello helloApi(@RequestParam("name") String name){
