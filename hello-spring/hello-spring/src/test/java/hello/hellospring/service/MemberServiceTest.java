@@ -13,11 +13,11 @@ class MemberServiceTest {
 
     @Test
     void 회원가입() {
-        //given 뭔가 주어졌는데
-        Member member = new Member();
-        member.setName("hello");
-
-        //when 이거를 실행했을때
+//        //given 뭔가 주어졌는데
+//        Member member = new Member();
+//        member.setName("hello");
+//
+//        //when 이거를 실행했을때
 //        Long saveId = memberService.join(member);
 //
 //        //then 결과가 이게 나와야함

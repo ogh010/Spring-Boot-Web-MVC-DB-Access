@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface MemeberRepositoy {
+public interface MemeberRepositoy { // 기계적인 느낌
     Member save(Member member); // 1. 저장하기
 
     Optional<Member> findById(Long id); // null 처리 대시 Optional로..! 2. id로 찾기

@@ -11,7 +11,7 @@ import java.util.Optional;
 
 // command + shift + t 테스트 자동으로 생성
 @Service
-public class MemberService {
+public class MemberService { // 비즈니스적으로 네이밍
 
     private final MemeberRepositoy memeberRepositoy;
 
@@ -26,8 +26,8 @@ public class MemberService {
      * @return
      */
     public Long join(Member member){
-        // 같은 이름이 있는 중복 회원 x
-        validateDuplicateMember(member); // 중복 회원 검증
+        // 비즈니스 로직 : 같은 이름이 있는 중복 회원 x
+        validateDuplicateMember(member); // 중복 회원 검증 메서드
         memeberRepositoy.save(member);
         return member.getId();
     }
