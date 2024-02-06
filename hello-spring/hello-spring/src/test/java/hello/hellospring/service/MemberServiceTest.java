@@ -18,12 +18,12 @@ class MemberServiceTest {
         member.setName("hello");
 
         //when 이거를 실행했을때
-        Long saveId = memberService.join(member);
-
-        //then 결과가 이게 나와야함
-        Member findMember = memberService.findOne(saveId).get();
-        memberService.findOne(saveId)
-        Assertions.assertThat()
+//        Long saveId = memberService.join(member);
+//
+//        //then 결과가 이게 나와야함
+//        Member findMember = memberService.findOne(saveId).get();
+//        memberService.findOne(saveId)
+//        Assertions.assertThat()
 
     }
 

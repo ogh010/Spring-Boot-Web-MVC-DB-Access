@@ -3,14 +3,22 @@ package hello.hellospring.service;
 import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemeberRepositoy;
 import hello.hellospring.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 // command + shift + t 테스트 자동으로 생성
+@Service
 public class MemberService {
 
-    private final MemeberRepositoy memeberRepositoy = new MemoryMemberRepository();
+    private final MemeberRepositoy memeberRepositoy;
+
+    @Autowired
+    public MemberService(MemeberRepositoy memeberRepositoy) {
+        this.memeberRepositoy = memeberRepositoy;
+    }
 
     /**
      * 회원가입

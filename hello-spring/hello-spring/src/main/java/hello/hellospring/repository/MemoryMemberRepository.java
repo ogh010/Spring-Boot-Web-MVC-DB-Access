@@ -1,6 +1,7 @@
 package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 import java.util.List;
@@ -8,6 +9,7 @@ import java.util.Map;
 import java.util.Optional;
 
 // implements command+enter로 인터페이스 만들어논 기능(?) 가져올수있음
+@Repository
 public class MemoryMemberRepository implements MemeberRepositoy{
 
     // 데이터 저장소 및 시퀀스
